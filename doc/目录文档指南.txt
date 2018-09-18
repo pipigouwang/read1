@@ -1,0 +1,138 @@
+.idea
+application
+-|admin  后台模块
+-|-|controller 
+-|-|-|Feedback.php  用户反馈相关CURD
+-|-|-|Index.php  系统版本历史CURD,店铺总数 代理总数 用户反馈未读消息统计
+-|-|-|Member.php 会员（病人等四个角色）相关CURD，病历等
+-|-|-|Message.php 系统消息
+-|-|-|News.php  咨讯
+-|-|-|Order.php 订单
+-|-|-|Product.php  药品
+-|-|-|Systemsets.php 系统相关设置
+-|-|-|Test.php
+-|-|-|Upload.php  文件（图片）上传
+-|-|-|UserBase.php 管理员基类
+-|-|-|Users.php 管理员CURD
+model
+-|Counter.php   用户在线统计类（暂时未完善）
+-|DataCenter.php 暂时未用
+-|Feedback.php 用户反馈模型
+-|Member.php 会员模型
+-|Message.php 系统消息模型
+-|News.php 系统资讯模型
+-|Newspush.php 公众号消息推送（未开发完全）
+-|Order.php 订单相关
+-|Product.php 药品
+-|Publicnumbermenuset.php  公众号相关（自定义菜单）
+-|System.php  系统设置等
+-|Upload.php 上传文件类
+-|UsersAuth.php 管理员权限类
+validate
+-|AuthV.php
+-|MemberV.php
+-|OrderV.php
+-|ProductV.php
+-|SystemV.php
+extra
+-|queue.php
+index
+-|controller
+-|-|BaseOfUser.php  会员基类
+-|-|Index.php  首页相关信息入口，公众号菜单授权入口，绑定手机号，获取jsapi参数入口
+-|-|Member.php 会员相关
+-|-|Patient.php 病人病历和积分历史
+-|-|Pointmall.php 积分商城
+-|-|Product.php 药品相关
+-|-|Search.php  搜索入口
+-|-|Sendsms.php 发送短信入口
+-|-|Upload.php  上传文件入口
+model
+-|Active.php   游戏，活动模型
+-|Member.php  会员模型
+-|Newsandmsg.php  系统消息，系统资讯模型
+-|Order.php 订单模型
+-|Product.php  药品模型
+.htaccess
+command.php
+common.php  计算距离方法，获取IP方法
+tags.php
+config
+-|app.php
+-|cache.php
+-|cookie.php
+-|database.php
+-|log.php
+-|session.php
+-|template.php
+-|trace.php
+doc
+-|admin会员模块.md
+-|admin权限管理文档.md
+-|会员代理情况.md
+-|前端会员阅读消息阅读咨讯.md
+-|前端分享.md
+-|前端广告弹窗.md
+-|前端搜索.md
+-|前端游戏.md
+-|前端病人添加，修改标签.md
+-|前端病历.md
+-|前端积分商城.md
+-|前端签到.md
+-|前端订单.md
+-|前端首页.md
+-|发送手机验证码.md
+-|后端上传图片.md
+-|后端会员积分修改.md
+-|后端发送系统消息.md
+-|后端用户常搜药品.md
+-|后端病历和购药记录.md
+-|后端积分历史.md
+-|后端系统日志显示.md
+-|店铺，代理，销售，新增各类会员，未处理用户反馈 数量统计.md
+-|消息.md
+-|消息和文章咨讯和用户反馈.md
+-|病人个人中心相关.md
+-|管理员新增，登录.md
+-|系统文档.md
+-|系统版本记录显示 & 添加.md
+-|系统设置相关文档.md
+-|药品相关.md
+-|订单.md
+-|设置游戏大转盘参数.md
+extend
+-|Auth
+-|-|Auth.php
+sms
+-|Smsconfig.php
+ueedit
+-|ue.php
+wxlib     公众号相关
+-|http.php
+-|request.php 请求分发类
+-|response.php 请求返回类
+-|wxcustom.php 未用
+-|wxpublicnumber.php 公众号入口类
+-|wxtool.php 工具类
+.gitignore
+install
+public
+-|static
+thinkphp
+-|lang
+-|-|zh-cn.php
+library
+*
+*
+*
+composer.json
+.gitignore
+autoload.php
+.gitignore
+.travis.yml
+LICENSE.txt
+README.md
+build.php
+composer.json
+composer.lock
+think
